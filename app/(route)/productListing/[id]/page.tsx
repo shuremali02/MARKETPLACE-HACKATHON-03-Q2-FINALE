@@ -4,6 +4,7 @@ import React from 'react'
 import DataFetching from '@/lib/dataFetching';
 import SingleProductCard from '@/app/Component/productListPage/productDetail'
 import { Cart } from '@/app/context/cartContext';
+import Navbar from '@/app/Component/header';
 
 async function ProductDetails({params}:{params:{id:string}}) {
  const data: Cart[] = await DataFetching();
@@ -25,7 +26,7 @@ async function ProductDetails({params}:{params:{id:string}}) {
   return (
     <div>
       <TopSection />
-      
+      <Navbar/>
       <SingleProductCard product={matchId} />
       </div>
        )

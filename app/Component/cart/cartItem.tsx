@@ -5,6 +5,7 @@ import CartRow from "../cartRow";
 import { Button } from "@/components/ui/button";
 import { useRouter } from "next/navigation";
 
+
 export default function CartTable() {
   const router = useRouter();
   const { cart, clearCart } = useCart();
@@ -12,7 +13,9 @@ export default function CartTable() {
  
 
   return (
+    
     <div className="md:p-6">
+
       {/* Conditional rendering */}
       {cart.length === 0 ? (
         <div className="flex justify-center items-center flex-col mt-10">
