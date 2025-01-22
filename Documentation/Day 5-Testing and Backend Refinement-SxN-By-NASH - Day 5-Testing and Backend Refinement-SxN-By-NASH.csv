@@ -15,3 +15,13 @@ Analyze Core Web Vitals (Largest Contentful Paint, First Input Delay, Cumulative
 Optimize assets like images and CSS/JS files.
 Verify lazy loading for images and code splitting for JavaScript.
 Check the page load time after applying performance optimizations.","The website loads within 2-3 seconds, and Core Web Vitals meet recommended thresholds.",Low Performace Optimization,Failed,Low,,Below expectation
+TC006,Add to Wishlist functionality,"Navigate to any product page
+Click on the ""Add to Wishlist"" button-> user can remove the item from wishlist by clicking the heart icon on the product
+Verify that the product is added to the Wishlist
+Go to the Wishlist page and verify that the product is listed",The product should be successfully added to the Wishlist and visible in the Wishlist page,The products are successfully added to the Wishlist and visible in the Wishlist page,Passed,High,-,Work as expected
+TC007,Pagination Functionality,"Go to the product listing page
+Check if pagination controls are displayed at the bottom
+Click on the ""Next"" page button
+Verify that the page navigates to the next set of products
+Click on the ""Previous"" page button (if applicable)
+Verify that the page navigates to the previous set of products","The pagination should work as expected, and products should change based on the page selected","The pagination work as expected, and products should change based on the page selected",Passed,High,-,Work as expected

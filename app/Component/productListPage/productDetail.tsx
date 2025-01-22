@@ -9,7 +9,7 @@ import { Button } from "@/components/ui/button";
 import { Cart, useCart } from "../../context/cartContext";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { FaAngleDoubleLeft } from "react-icons/fa";
+import {  BiArrowFromRight } from "react-icons/bi";
 
 export default function SingleProductCard({ product }: { product: Cart }) {
   const { addToCart, addToWishlist } = useCart();
@@ -36,7 +36,7 @@ export default function SingleProductCard({ product }: { product: Cart }) {
   return (
     <div className="flex flex-col md:flex-row justify-start items-start gap-6 p-6 md:p-12 bg-white shadow-lg rounded-lg">
       <div onClick={()=>{router.back()}}>
-        <FaAngleDoubleLeft  size={42}/>
+        <BiArrowFromRight  size={42}/>
       </div>
       {/* Left Section - Product Images */}
       <div className="md:w-1/2 w-full flex flex-col items-center">

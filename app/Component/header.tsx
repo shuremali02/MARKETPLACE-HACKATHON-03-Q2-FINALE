@@ -4,7 +4,6 @@ import Link from "next/link";
 import Image from "next/image";
 import { CiHeart } from "react-icons/ci";
 import { PiShoppingCartSimpleThin } from "react-icons/pi";
-import { IoIosSearch } from "react-icons/io";
 import { UserPen } from "lucide-react";
 
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
@@ -52,9 +51,7 @@ export default function Navbar() {
             <UserPen size={22} className="hidden md:block" />
           </Link>
           <div className="md:flex hidden gap-4">
-            <div>
-              <IoIosSearch size={30} />
-            </div>
+            
             <div className="relative">
               <Link href={"/shop/wishlist"}>
                 <CiHeart size={30} />
@@ -151,7 +148,7 @@ export default function Navbar() {
 
           {/* Icons and Login Section */}
           
-      <div className="flex flex-col items-center gap-4 mt-6">
+      <div className="flex flex-row items-center gap-4 mt-6">
       <Link href={"/account"}>
       <UserPen size={22} />
                 </Link>

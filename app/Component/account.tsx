@@ -32,7 +32,7 @@ function MyAccount() {
                 </label>
                 <input
                   type="text"
-                  placeholder="Naimal"
+                  placeholder="SxN"
                   className="bg-gray-100 rounded-md p-3 w-full text-sm focus:ring-2 focus:ring-red-500"
                 />
               </div>
@@ -42,7 +42,7 @@ function MyAccount() {
                 </label>
                 <input
                   type="text"
-                  placeholder="Salahuddin"
+                  placeholder="By Nash"
                    className="bg-gray-100 rounded-md p-3 w-full text-sm focus:ring-2 focus:ring-red-500"
                 />
               </div>
@@ -55,7 +55,7 @@ function MyAccount() {
                 </label>
                 <input
                   type="email"
-                  placeholder="naimalarain@gmail.com"
+                  placeholder="nash@gmail.com"
                    className="bg-gray-100 rounded-md p-3 w-full text-sm focus:ring-2 focus:ring-red-500"
                 />
               </div>
