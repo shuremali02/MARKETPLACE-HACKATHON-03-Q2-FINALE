@@ -8,6 +8,7 @@ import Category from "./Component/homepage/browseByCategory";
 import Bottom from "./Component/homepage/bottom";
 import Navbar from "./Component/header";
 
+
 export default function Home() {
   
   return (
