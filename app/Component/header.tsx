@@ -150,12 +150,15 @@ export default function Navbar() {
           </div>
 
           {/* Icons and Login Section */}
-          <div className="flex flex-col items-center gap-4 mt-6">
-            <UserPen size={22} />
+          
+      <div className="flex flex-col items-center gap-4 mt-6">
+      <Link href={"/account"}>
+      <UserPen size={22} />
+                </Link>
+          
             {/* <p className="text-lg font-medium">Login / Register</p> */}
-            <div className="flex gap-6">
-              <IoIosSearch size={24} />
-
+           
+             
               <div className="relative">
                 <Link href={"/shop/wishlist/cart"}>
                   <PiShoppingCartSimpleThin size={32} />
@@ -172,7 +175,7 @@ export default function Navbar() {
               {wishlistCount}
             </span>
             </div>
-            </div>
+            
           </div>
         </div>
       )}
