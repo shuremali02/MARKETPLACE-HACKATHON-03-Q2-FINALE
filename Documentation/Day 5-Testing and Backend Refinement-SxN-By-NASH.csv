@@ -1,0 +1,17 @@
+Test Case ID,Test Case Description,Test Steps,Expected Result,Actual Result,Status,Severity Level,Assigned To,Remarks
+TC001,Validate product listing page,"product listing display, single product detail page display",perfectly display all data dynamically,Product displayed correctly,Passed,High,-,everything is displayed dynamically (fetched from sanity)
+TC002,API Error handling,"(
+    ""Disconnect the API or simulate server downtime -> Refresh the page -> ""
+    ""Check if fallback message ('No product available') is displayed -> Verify fallback layout and styling for proper visibility.""
+)",should display fallbacks properly,simple fallback with not proper UI,Passed,Low,Shurem and Naimal,fallback should be displayed professionally
+TC003,Add to Cart Functionality,"(""item added to the cart -> increase and decrease the quantity of the product -> ""
+                       ""can clear the product -> can remove item from the cart -> can update the product -> ""
+                       ""can return back to the shop page from the cart page"")","add, delete, update correctly","add, delete, update correctly",Passed,High,-,functionality works fine
+TC004,Responsive UI across screen sizes,"Use browser DevTools to test responsiveness at different screen sizes (e.g., 320px, 768px, 1024px) ""
+    ""-> Verify layout adjustments -> Test with tools like Chrome DevTools and Responsively App ""
+    ""-> Check content alignment and overlapping issues.",should display nicely in proper layout without overlapping the content,UI looks fine across all screen sizes,Passed,Medium,-,looks good
+TC005,Performance Optimization Testing,"Measure the website's initial load time using tools like Lighthouse or GTmetrix.
+Analyze Core Web Vitals (Largest Contentful Paint, First Input Delay, Cumulative Layout Shift).
+Optimize assets like images and CSS/JS files.
+Verify lazy loading for images and code splitting for JavaScript.
+Check the page load time after applying performance optimizations.","The website loads within 2-3 seconds, and Core Web Vitals meet recommended thresholds.",Low Performace Optimization,Failed,Low,,Below expectation
