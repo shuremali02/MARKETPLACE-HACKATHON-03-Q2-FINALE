@@ -3,19 +3,26 @@ import { useEffect, useState } from "react";
 import JustForYou from "../card";
 import Link from "next/link"
 import DataFetching, { WatchesXPerfumes } from "@/lib/dataFetching";
+import LoadingAnimation from "./loadingAnimation";
 
 function ProductSection() {
   const [product, setProduct] = useState<WatchesXPerfumes[]>([]);
+  const [loader,setLoader]=useState(false);
 
   useEffect(() => {
     const fetchData = async () => {
+      setLoader(true)
       const data: WatchesXPerfumes[] = await DataFetching(); // Fetch data
       const slicedData: WatchesXPerfumes[] = data.slice(3, 11); // Slice data
       setProduct(slicedData);
+      setLoader(false);
     };
     fetchData();
   }, []);
   if(!product){return(<div>No product found</div>)}
+  if(loader){
+    return <LoadingAnimation/>
+  }
 
   return (
     <div className="w-full py-9">
