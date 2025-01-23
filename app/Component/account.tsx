@@ -7,6 +7,7 @@ import React, { useState } from "react";
 
 function MyAccount() {
     const [isPopUpVisible, setIsPopUpVisible] = useState(false);
+    
 
   return (
     <div className="min-h-screen">

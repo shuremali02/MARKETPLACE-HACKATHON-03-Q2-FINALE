@@ -30,11 +30,11 @@ function Checkout() {
   const [isPopUpVisible, setIsPopUpVisible] = useState(false);
   return (
     <>
-    <TopSection />
-    <Navbar />
+    <TopSection/>
+    <Navbar/>
     <div className="max-w-7xl w-full mx-auto p-7">
       {/* Breadcrumb Section */}
-      <BreadCrumb route1={"Shop"} route2="Cart" route3="Checkout" />
+      <BreadCrumb route1={"Shop"} route1Link="/productListing"  route2="Cart" route2Link="/shop/wishlist/cart" route3="Checkout" route3Link="/shop/wishlist/cart/checkout"/>
       <div className="flex flex-col md:flex-row gap-9 md:gap-11 py-7">
         <div className="w-full md:w-1/2 flex pt-7 flex-col gap-4 md:p-5">
           <h1 className="text-2xl font-bold mb-3 text-gray-800">
