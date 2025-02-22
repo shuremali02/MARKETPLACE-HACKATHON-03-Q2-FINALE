@@ -31,7 +31,7 @@ This project is a modern and responsive web application developed as part of the
 - Hosted on **Vercel** for fast and reliable performance.  
 
 ## 🚀 Live Demo  
-Explore the live version of the project: [Naimal's Hackathon Project](https://naimal-ui-ux-hackathon-q2.vercel.app/)  
+Explore the live version of the project: [ Hackathon Project](https://naimal-ui-ux-hackathon-q2.vercel.app/)  
 
 ## 🛠️ Technologies Used  
 - **Frontend**: Next.js, Tailwind CSS  
