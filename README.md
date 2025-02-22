@@ -1,4 +1,4 @@
-# 🌟 Naimal's UI/UX Hackathon Project  
+# 🌟 SxN by Nash UI/UX Hackathon Project  
 
 This project is a modern and responsive web application developed as part of the **Hackathon Q2** challenge, showcasing advanced UI/UX design principles and seamless user navigation. It includes several thoughtfully crafted pages aimed at providing an intuitive user experience.
 
